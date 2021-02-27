@@ -4,7 +4,7 @@ This is the implementation of our ESEC/FSE 2021 paper:  **DExposing Numerical Bu
 
 ## Description
 
-In this paper, we propose a novel bug finding technique that  automatically generates a small input that exposes numerical bugs by inducing NaN or INF values called GRIST (**GR**ad**I**ent **S**earch based Numerical Bug **T**riggering). The technique piggy-backs on the built-in gradient computation functionalities of deep learning platforms. Our evaluation on 63 real-world subjects  containing 79 bugs shows that our technique  detects 78 numerical bugs including 33 that cannot be exposed by the inputs provided in the projects and 31 that cannot be detected by the state-of-the-art technique named DEBAR. Meanwhile, our technique  can save the time cost of triggering bugs by 7.85 times on average. Our tool and datasets are released here. 
+In this paper, we propose a novel bug finding technique that automatically generates a small input that exposes numerical bugs by inducing NaN or INF values called GRIST (**GR**ad**I**ent **S**earch based Numerical Bug **T**riggering). The technique piggy-backs on the built-in gradient computation functionalities of deep learning platforms. Our evaluation on 63 real-world subjects  containing 79 bugs shows that our technique  detects 78 numerical bugs including 33 that cannot be exposed by the inputs provided in the projects and 31 that cannot be detected by the state-of-the-art technique named DEBAR. Meanwhile, our technique  can save the time cost of triggering bugs by 7.85 times on average. Our tool and datasets are released here. 
 
 ## Datasets
 
@@ -15,7 +15,7 @@ In total, we collected 63 DL programs with 79 numerical bugs (each DL program co
   Regarding known bugs from GitHub, we adopted bug-relevant keywords (including NaN, INF, and the operations listed in paper) to search a set of candidate programs from GitHub according to the descending order of GitHub searching relevance and then conducted manual filtering. we used 8 subjects whose 10 bugs can be reproduced conveniently and successfully in our runtime experiment.
 - **Unknown bugs from GitHub**: We applied GRIST and the state-of-the-art technique DEBAR to fuzz GitHub DL programs and finally identified 46 subjects with 56 unknown numerical bugs to developers.
 
-All 63 programs of our paper can be found in `scripts/study_case`
+All 63 programs of our paper can be found in `scripts/study_case` and the correspondence between their ID and project name is in dataset_info.md.
 
 ## Experiment
 
@@ -42,7 +42,7 @@ python -u ID_X_SCRIPTS_grist.py
 
 ### Configuration
 
-There are some hyperparameters in GRIST and they be easily configured as following.
+There are some hyper-parameters in GRIST and they could be easily configured as follows.
 
 ` In experiments.conf`
 
