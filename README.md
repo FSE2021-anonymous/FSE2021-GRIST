@@ -1,6 +1,6 @@
 # Exposing Numerical Bugs in Deep Learning via Gradient Back-propagation
 
-This is the implementation of our ESEC/FSE 2021 paper:  **DExposing Numerical Bugs in Deep Learning via Gradient Back-propagation** 
+This is the implementation of our ESEC/FSE 2021 paper:  **Exposing Numerical Bugs in Deep Learning via Gradient Back-propagation** 
 
 ## Description
 
