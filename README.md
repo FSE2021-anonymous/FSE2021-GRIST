@@ -15,7 +15,7 @@ In total, we collected 63 DL programs with 79 numerical bugs (each DL program co
   Regarding known bugs from GitHub, we adopted bug-relevant keywords (including NaN, INF, and the operations listed in paper) to search a set of candidate programs from GitHub according to the descending order of GitHub searching relevance and then conducted manual filtering. we used 8 subjects whose 10 bugs can be reproduced conveniently and successfully in our runtime experiment.
 - **Unknown bugs from GitHub**: We applied GRIST and the state-of-the-art technique DEBAR to fuzz GitHub DL programs and finally identified 46 subjects with 56 unknown numerical bugs to developers.
 
-All 63 programs of our paper can be found in `scripts/study_case` and the correspondence between their ID and project name is in dataset_info.md.
+All 63 programs of our paper can be found in `scripts/study_case` and the correspondence between their ID and project name is in [dataset_info.md](dataset_info.md).
 
 ## Experiment
 
